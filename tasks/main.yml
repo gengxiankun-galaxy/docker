@@ -2,6 +2,7 @@
   shell: "curl -sSL https://get.docker.com/ | sh &&\
         yum install python-pip -y
         pip install -U docker-compose"
+  ignore_errors: yes
 
 - name: 配置docker.service相关参数
   template: src=docker.service.j2 dest=/usr/lib/systemd/system/docker.service
