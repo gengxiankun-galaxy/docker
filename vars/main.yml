@@ -1,0 +1,3 @@
+DOCKER_INSECURE_REGISTRIES: ''
+
+DOCKER_GRAPH: '-g /data/lib/docker/'
