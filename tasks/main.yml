@@ -9,3 +9,6 @@
 - name: 配置daemon.json相关参数
   template: src=daemon.json.j2 dest=/etc/docker/daemon.json
   when: DOCKER_INSECURE_REGISTRIES != ''
+
+- name: 重启docker加载配置
+  shell: 'systemctl daemon-reload && systemctl restart docker'
