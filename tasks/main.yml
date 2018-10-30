@@ -10,9 +10,14 @@
 - name: 配置docker.service相关参数
   template: src=docker.service.j2 dest=/usr/lib/systemd/system/docker.service
 
+- name: 重载docker使配置生效，并设置开机自启动
+  shell: "systemctl daemon-reload &&\
+        systemctl start docker &&\
+        systemctl enable docker"
+
 - name: 配置daemon.json相关参数
   template: src=daemon.json.j2 dest=/etc/docker/daemon.json
   when: DOCKER_INSECURE_REGISTRIES != ''
 
 - name: 重启docker加载配置
-  shell: 'systemctl daemon-reload && systemctl restart docker'
+  shell: "systemctl restart docker"
