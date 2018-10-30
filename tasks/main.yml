@@ -1,6 +1,9 @@
-- name: 安装docker-ce、docker-compose
-  shell: "curl -sSL https://get.docker.com/ | sh &&\
-        yum install python-pip -y
+- name: 安装docker-ce
+  shell: "curl -sSL https://get.docker.com/ | sh"
+  ignore_errors: yes
+
+- name: 安装docker-compose
+  shell: "yum install python-pip -y &&\
         pip install -U docker-compose"
   ignore_errors: yes
 
