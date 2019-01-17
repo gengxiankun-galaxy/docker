@@ -1,2 +1,6 @@
 ---
 # defaults file for docker
+
+SRV_PATH: '/data/srv'
+DOCKER_INSECURE_REGISTRIES: ''
+DOCKER_GRAPH: '-g /data/lib/docker/'
