@@ -1,7 +1,7 @@
 DOCKER
 =========
 
-Deploy Docker services via ansible。
+Deploy docker services via ansible.
 
 Requirements
 ------------
