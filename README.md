@@ -8,17 +8,16 @@ Installation
 
 `ansible-galaxy install gengxiankun.docker`
 
-Requirements
+Dependencies
 ------------
 
-- CENTOS 7+
+- CENTOS
 
 Role Variables
 --------------
 
 parameter | description
 ------------ | -------------
-SRV_PATH | 配置目录
 DOCKER_INSECURE_REGISTRIES | 注册非HTTP的镜像源
 DOCKER_GRAPH | 部署目录
 
