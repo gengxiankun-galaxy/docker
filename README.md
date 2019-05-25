@@ -3,7 +3,7 @@ DOCKER
 
 Deploy docker services via ansible.
 
-Download
+Installation
 ------------
 
 `ansible-galaxy install -p /etc/ansible/roles gengxiankun.docker`
