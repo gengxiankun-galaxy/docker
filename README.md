@@ -8,7 +8,7 @@ Installation
 
 `ansible-galaxy install gengxiankun.docker`
 
-Dependencies
+Requirements
 ------------
 
 - CENTOS
