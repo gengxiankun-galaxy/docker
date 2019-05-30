@@ -27,7 +27,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - docker
+         - gengxiankun.docker
 
 License
 -------
