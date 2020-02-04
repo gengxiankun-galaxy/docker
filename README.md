@@ -28,6 +28,8 @@ Example Playbook
     - hosts: servers
       roles:
          - gengxiankun.docker
+      vars:
+         - DOCKER_GRAPH: "-g /data/lib/docker"
 
 License
 -------
