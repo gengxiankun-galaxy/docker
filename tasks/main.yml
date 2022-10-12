@@ -3,7 +3,7 @@
   ignore_errors: yes
 
 - name: 安装docker-compose
-  shell: "yum install python3 &&\
+  shell: "yum install -y python3 &&\
         python3 -m pip install -U pip &&\
         pip3 install -U docker-compose"
   ignore_errors: yes
